@@ -39,7 +39,7 @@
   }
   
   .content-region1 {
-    background: #047933 url("{{ site.github.url }}/images/empty-building.jpg") 45% 83% no-repeat;
+    background: #047933 url("/images/empty-building.jpg")  45% 83% no-repeat;
     background-size: 250% 90%;
   }
   
@@ -95,7 +95,7 @@
   
   .content-region1 {
     margin-top: 3rem;
-    background: #047933 url("/images/empty-building.jpg") 45% 0% no-repeat;
+    background: #047933 url("/images/empty-building.jpg")  45% 0% no-repeat;
     background-size: intial;
   }
   
