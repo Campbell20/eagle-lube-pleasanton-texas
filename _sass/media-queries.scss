@@ -1,0 +1,153 @@
+/**
+ * Media Queries
+ **/
+ 
+// phones
+@media (min-width: 320px) {
+  body::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: pink;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+  
+    nav {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content:space-between;
+  }
+  
+  .nonmobilenav-container {
+    display: none;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  body {
+    font-size: 1.2rem;
+  }
+  
+  .content-region1 {
+    background: #047933 url("/images/empty-building.jpg") 45% 83% no-repeat;
+    background-size: 250% 90%;
+  }
+  
+  .content-region1-bottom {
+    font-size: .9rem;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  body::before {
+    content: "480px";
+    color: maroon;
+  }
+  .nonmobilenav-container {
+    display: none;
+  }
+  
+   .content-region1-bottom {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
+}
+
+
+
+
+// ipads
+@media (min-width: 620px) {
+  body::before {
+    content: "620px";
+    color: orange;
+  }
+  
+  .logo-container{
+    font-size: 2.2rem;
+  }
+  
+  nav {
+    font-size: 1.0rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+  }
+  
+  .mobilebutton-container {
+    display: none;
+  }
+  
+  .nonmobilenav-container {
+     display: inline-block;
+  }
+  
+  .content-region1 {
+    margin-top: 3rem;
+    background: #047933 url("/images/empty-building.jpg") 45% 0% no-repeat;
+    background-size: intial;
+  }
+  
+  .content-region1-bottom {
+    font-size: 1.6rem;
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 810px) {
+  body::before {
+    content: "810px";
+    color: black;
+  }
+  
+   nav {
+    font-size: 1.2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+  }
+  
+  .content-region1 {
+    margin-top: 1rem;
+  }
+  
+}
+
+
+
+
+
+// desktops
+@media (min-width: 1200px) {
+  body::before {
+    content: "1200px";
+    color: CornflowerBlue;
+  }
+  
+   nav {
+    font-size: 1.2rem;
+    display: flex;
+    // flex-flow: row nowrap;
+    justify-content:space-around;
+  }
+
+ 
+}
+
+@media (min-width: 1400px) {
+  body::before {
+    content: "1400px";
+    color: red;
+  }
+}

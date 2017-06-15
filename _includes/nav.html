@@ -1,0 +1,105 @@
+<nav>
+ <!--LOGO-->
+ <div class="logo-container">
+  EAGLE LUBE
+ </div>
+ 
+ <!--MOBILE NAVIGATION-->
+ <div class="mobilebutton-container">
+  <select size="1" class="mobile-menu" onchange="location.href=this.value">
+   <option value="/">HOME</option>
+   <option value="/">SERVICES</option>
+   <option value="/pages/services/oil-change.html">OIL CHANGE</option>
+   <option value="/pages/services/state-vehicle-inspection.html">STATE VEHICLE INSPECTION</option>
+   <option value="/pages/services/other-services.html">OTHER SERVICES</option>
+   <option value="/pages/about-us/about-us.html">ABOUT US</option>
+   <option value="/pages/about-us/how-did-we-do.html">HOW DID WE DO?</option>
+   <option value="/pages/about-us/contact-us.html">CONTACT US</option>
+   <option value="/pages/about-us/awards.html">AWARDS</option>
+  </select>
+ </div>
+ 
+ 
+ 
+ <!--NONMOBILE NAVIGATION-->
+ <div class="nonmobilenav-container">
+  <ul>
+   <li>
+    <a href="/">HOME</a>
+   </li>
+   
+   <!--SERVICES SECTION-->
+   <li>
+     <div class="dropdown">
+      <button onmouseover="myFunction()" class="dropbtn"><a href="/">SERVICES</a></button>
+      <div id="myDropdown" class="dropdown-content">
+       <a href="/pages/services/oil-change.html">Oil Changes</a>
+       <a href="/pages/services/state-vehicle-inspection.html">State Inspections</a>
+       <a href="/pages/services/other-services.html">Other Services</a>
+      </div>
+     </div>
+     
+     <!--JAVASCRIPT FOR SERVICES BUTTON-->
+     <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+       document.getElementById("myDropdown").classList.toggle("show");
+      }
+     
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+     
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+         }
+        }
+       }
+      }
+     </script>
+   </li>
+ 
+ 
+   <!--ABOUT US SECTION-->
+   <li>
+    <div class="dropdown">
+      <button onmouseover="myFunction2()" class="dropbtn"><a href="/pages/about-us/about-us.html">ABOUT US</a></button>
+      <div id="aboutus" class="dropdown-content">
+       <a href="/pages/about-us/how-did-we-do.html">How did we do?</a>
+       <a href="/pages/about-us/contact-us.html">Contact Us</a>
+       <a href="/pages/about-us/awards.html">Awards</a>
+      </div>
+     </div>
+     
+     <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction2() {
+       document.getElementById("aboutus").classList.toggle("show");
+      }
+     
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+     
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+         var openDropdown = dropdowns[i];
+         if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+         }
+        }
+       }
+      }
+     </script>
+   </li>
+  </ul>
+ 
+ </div>
+</nav>

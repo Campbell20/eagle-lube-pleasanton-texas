@@ -1,0 +1,130 @@
+// ---
+// ---
+
+// HYPERLINKS
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+// and
+/* visited link */
+a:link, a:visited {
+    color:#b6b6b6;
+}
+
+/* mouse over link */
+a:hover {
+  color:#16d96d;
+}
+
+/* selected link */
+a:active {
+    color:#00ff72;
+}
+
+
+// NAVIGATION
+nav {
+    position: fixed;
+    background-color:#047933;
+    width: 100%;
+    padding-bottom: .2rem;
+}
+
+//for non-mobile devices
+nav ul {
+    margin:0;
+    padding:0;
+    color: #green;
+}
+    
+nav ul>li {
+    display: inline-flex;
+    border-right: .1rem solid black;
+    padding-right: .5rem;
+    margin-left: .1rem;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+    
+
+.logo-container {
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+    margin-top: .1rem;
+    margin-right: 3.0rem;
+    background-color: #047933;
+    // width: 50%;
+}    
+
+
+.nonmobilenav-container {
+    background-color: #047933;
+}    
+
+
+//for mobile devices
+.mobilebutton-container {
+    margin-top: .3rem;
+    margin-right: .5rem;
+    background: #047933 url('menu-icon-dk.png') 50% 50% no-repeat;
+    width: 2.0rem;
+    height: 2.0rem;
+    border: .1rem solid white;
+}
+
+select {
+    width: 2.0rem;
+    height:2.0rem;
+    border: none;
+    opacity: 0;
+}
+
+
+
+
+// DROP DOWN MENU FOR SERVICES AND ABOUT US BUTTONS
+.dropbtn {
+    background-color:#047933;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color:#047933;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 1.0rem 1.0rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color:#047933;
+    
+}
+
+.show {
+    display:block;
+    
+}
