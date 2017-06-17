@@ -4,18 +4,18 @@
 
 // phones
 @media (min-width: 320px) {
-  body::before {
-    content: "320px";
-    font-family: Arial, sans-serif;
-    color: pink;
-    position: fixed;
-    top: 0;
-    left: 0;
-    font-weight: 700;
-    margin: 5px;
-    font-size: 2rem;
-    z-index: 9999;
-  }
+  // body::before {
+  //   content: "320px";
+  //   font-family: Arial, sans-serif;
+  //   color: pink;
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   font-weight: 700;
+  //   margin: 5px;
+  //   font-size: 2rem;
+  //   z-index: 9999;
+  // }
   nav {
     font-size: 1.2rem;
     display: flex;
@@ -76,14 +76,12 @@
     background-color: #365632;
     width: 60%;
     height: 7rem;
-    
   }
   .services-bottomleft-content h2 {
     font-size: 1rem;
     padding: .2rem 0;
     margin: 0;
   }
-  
   .services-bottomright-content {
     display: flex;
     background-color: #365632;
@@ -93,10 +91,10 @@
 }
 
 @media (min-width: 480px) {
-  body::before {
-    content: "480px";
-    color: maroon;
-  }
+  // body::before {
+  //   content: "480px";
+  //   color: maroon;
+  // }
   .nonmobilenav-container {
     display: none;
   }
@@ -146,10 +144,10 @@
 
 // ipads
 @media (min-width: 620px) {
-  body::before {
-    content: "620px";
-    color: orange;
-  }
+  // body::before {
+  //   content: "620px";
+  //   color: orange;
+  // }
   .logo-container {
     font-size: 2.2rem;
   }
@@ -212,17 +210,16 @@
     width: 35%;
     height: 12rem;
   }
-  
   .content-region3 {
     font-size: .9rem;
-}
+  }
 }
 
 @media (min-width: 810px) {
-  body::before {
-    content: "810px";
-    color: black;
-  }
+  // body::before {
+  //   content: "810px";
+  //   color: black;
+  // }
   nav {
     font-size: 1.2rem;
     display: flex;
@@ -232,8 +229,6 @@
   .content-region1 {
     margin-top: 1rem;
   }
-    
-    
   .services-content {
     font-size: 1.1rem;
     font-family: 'juno';
@@ -274,28 +269,38 @@
     width: 35%;
     height: 12rem;
   }
-  
-    .content-region3 {
+  .content-region3 {
     font-size: .9rem;
-}
-  
+  }
 }
 
 // desktops
 @media (min-width: 1200px) {
-  body::before {
-    content: "1200px";
-    color: CornflowerBlue;
-  }
-  nav {
-    font-size: 1.2rem;
-    display: flex;
-  }
+  //   body::before {
+  //     content: "1200px";
+  //     color: CornflowerBlue;
+  //   }
+  //   nav {
+  //     font-size: 1.2rem;
+  //     display: flex;
+  //   }
+  // }
 }
-
-@media (min-width: 1400px) {
-  body::before {
-    content: "1400px";
-    color: red;
+  @media (min-width: 1400px) {
+    // body::before {
+    //   content: "1400px";
+    //   color: red;
+    // }
+    .services-top-content-container {
+      height: 28rem;
+    }
+    .services-bottom-content-container {
+      height: 25rem;
+    }
+    .services-bottomleft-content {
+      height: 20rem;
+    }
+    .services-bottomright-content {
+      height: 25rem;
+    }
   }
-}
