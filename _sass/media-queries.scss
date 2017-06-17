@@ -1,7 +1,7 @@
 /**
  * Media Queries
  **/
- 
+
 // phones
 @media (min-width: 320px) {
   body::before {
@@ -16,36 +16,79 @@
     font-size: 2rem;
     z-index: 9999;
   }
-  
-    nav {
+  nav {
     font-size: 1.2rem;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
   }
-  
   .nonmobilenav-container {
     display: none;
   }
   h1 {
     font-size: 2.2rem;
   }
-  
   h2 {
     font-size: 1.5rem;
   }
-  
   body {
     font-size: 1.2rem;
   }
-  
   .content-region1 {
-    background: #047933  url("../images/empty-building.jpg")   45% 83% no-repeat;
+    background: #047933 url("../images/empty-building.jpg") 45% 83% no-repeat;
     background-size: 250% 90%;
   }
-  
   .content-region1-bottom {
     font-size: .9rem;
     margin-top: 5rem;
+  }
+  .services-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+    font-size: 1rem;
+    font-family: 'juno';
+  }
+  .services-top-content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 36rem;
+    width: 100%;
+  }
+  .services-topleft-content {
+    width: 100%;
+    height: 13rem;
+  }
+  .services-topright-content {
+    width: 100%;
+    height: 20rem;
+  }
+  .services-bottom-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 10rem;
+    padding-bottom: .5rem;
+  }
+  .services-bottomleft-content {
+    font-size: .6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #365632;
+    width: 60%;
+    height: 7rem;
+    
+  }
+  .services-bottomleft-content h2 {
+    font-size: 1rem;
+    padding: .2rem 0;
+    margin: 0;
+  }
+  
+  .services-bottomright-content {
+    display: flex;
+    background-color: #365632;
+    width: 40%;
+    height: 7rem;
   }
 }
 
@@ -57,15 +100,49 @@
   .nonmobilenav-container {
     display: none;
   }
-  
-   .content-region1-bottom {
+  .content-region1-bottom {
     font-size: 1.2rem;
     margin-top: 5rem;
   }
+  .services-content {
+    font-size: 1.1rem;
+    font-family: 'juno';
+  }
+  .services-top-content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 39rem;
+  }
+  .services-topleft-content {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 21rem;
+  }
+  .services-topright-content {
+    width: 100%;
+    height: 16rem;
+  }
+  .services-bottom-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 12rem;
+    padding-bottom: .5rem;
+  }
+  .services-bottomleft-content {
+    font-size: 1rem;
+    display: flex;
+    background-color: #365632;
+    width: 65%;
+    height: 12rem;
+  }
+  .services-bottomright-content {
+    display: flex;
+    background-color: #365632;
+    width: 35%;
+    height: 12rem;
+  }
 }
-
-
-
 
 // ipads
 @media (min-width: 620px) {
@@ -73,36 +150,72 @@
     content: "620px";
     color: orange;
   }
-  
-  .logo-container{
+  .logo-container {
     font-size: 2.2rem;
   }
-  
   nav {
     font-size: 1.0rem;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content:flex-start;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
-  
   .mobilebutton-container {
     display: none;
   }
-  
   .nonmobilenav-container {
-     display: inline-block;
+    display: inline-block;
   }
-  
   .content-region1 {
     margin-top: 3rem;
-    background: #047933 url("../images/empty-building.jpg")  45% 0% no-repeat;
+    background: #047933 url("../images/empty-building.jpg") 45% 0% no-repeat;
     background-size: intial;
   }
-  
   .content-region1-bottom {
     font-size: 1.6rem;
     margin-top: 7rem;
   }
+  .services-content {
+    font-size: 1.1rem;
+    font-family: 'juno';
+  }
+  .services-top-content-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 42rem;
+    width: 100%;
+  }
+  .services-topleft-content {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 27rem;
+  }
+  .services-topright-content {
+    width: 100%;
+    height: 14rem;
+  }
+  .services-bottom-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 12rem;
+    padding-bottom: .5rem;
+  }
+  .services-bottomleft-content {
+    font-size: 1rem;
+    display: flex;
+    background-color: #365632;
+    width: 65%;
+    height: 12rem;
+  }
+  .services-bottomright-content {
+    display: flex;
+    background-color: #365632;
+    width: 35%;
+    height: 12rem;
+  }
+  
+  .content-region3 {
+    font-size: .9rem;
+}
 }
 
 @media (min-width: 810px) {
@@ -110,23 +223,63 @@
     content: "810px";
     color: black;
   }
-  
-   nav {
+  nav {
     font-size: 1.2rem;
     display: flex;
     flex-flow: row nowrap;
-    justify-content:flex-start;
+    justify-content: space-between;
   }
-  
   .content-region1 {
     margin-top: 1rem;
   }
+    
+    
+  .services-content {
+    font-size: 1.1rem;
+    font-family: 'juno';
+  }
+  .services-top-content-container {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 1rem;
+    height: 21rem;
+    width: 100%;
+  }
+  .services-topleft-content {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 27rem;
+  }
+  .services-topright-content {
+    width: 100%;
+    height: 14rem;
+    padding-left: 1rem;
+  }
+  .services-bottom-content-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 12rem;
+    padding-bottom: .5rem;
+  }
+  .services-bottomleft-content {
+    font-size: 1rem;
+    display: flex;
+    background-color: #365632;
+    width: 65%;
+    height: 12rem;
+  }
+  .services-bottomright-content {
+    display: flex;
+    background-color: #365632;
+    width: 35%;
+    height: 12rem;
+  }
+  
+    .content-region3 {
+    font-size: .9rem;
+}
   
 }
-
-
-
-
 
 // desktops
 @media (min-width: 1200px) {
@@ -134,15 +287,10 @@
     content: "1200px";
     color: CornflowerBlue;
   }
-  
-   nav {
+  nav {
     font-size: 1.2rem;
     display: flex;
-    // flex-flow: row nowrap;
-    justify-content:space-around;
   }
-
- 
 }
 
 @media (min-width: 1400px) {
