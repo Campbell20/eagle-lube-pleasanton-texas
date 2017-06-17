@@ -7,8 +7,8 @@
  <!--MOBILE NAVIGATION-->
  <div class="mobilebutton-container">
   <select size="1" class="mobile-menu" onchange="location.href=this.value">
-   <option value="{{ site.github.url }}/">HOME</option>
-   <option value="{{ site.github.url }}/">SERVICES</option>
+   <option value="{{ site.github.url }}/index.html">HOME</option>
+   <option value="{{ site.github.url }}/index.html">SERVICES</option>
    <option value="{{ site.github.url }}/pages/services/oil-change.html">OIL CHANGE</option>
    <option value="{{ site.github.url }}/pages/services/state-vehicle-inspection.html">STATE VEHICLE INSPECTION</option>
    <option value="{{ site.github.url }}/pages/services/other-services.html">OTHER SERVICES</option>
@@ -25,13 +25,13 @@
  <div class="nonmobilenav-container">
   <ul>
    <li>
-    <a href="/">HOME</a>
+    <a href="{{ site.github.url }}/index.html">HOME</a>
    </li>
    
    <!--SERVICES SECTION-->
    <li>
      <div class="dropdown">
-      <button onmouseover="myFunction()" class="dropbtn"><a href="/">SERVICES</a></button>
+      <button onmouseover="myFunction()" class="dropbtn"><a href="{{ site.github.url }}/index.html">SERVICES</a></button>
       <div id="myDropdown" class="dropdown-content">
        <a href="{{ site.github.url }}/pages/services/oil-change.html">Oil Changes</a>
        <a href="{{ site.github.url }}/pages/services/state-vehicle-inspection.html">State Inspections</a>
@@ -68,7 +68,7 @@
    <!--ABOUT US SECTION-->
    <li>
     <div class="dropdown">
-      <button onmouseover="myFunction2()" class="dropbtn"><a href="/pages/about-us/about-us.html">ABOUT US</a></button>
+      <button onmouseover="myFunction2()" class="dropbtn"><a href="{{ site.github.url }}/pages/about-us/about-us.html">ABOUT US</a></button>
       <div id="aboutus" class="dropdown-content">
        <!--<a href="/pages/about-us/how-did-we-do.html">How did we do?</a>-->
        <a href="{{ site.github.url }}/pages/about-us/contact-us.html">Contact Us</a>
