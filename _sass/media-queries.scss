@@ -272,6 +272,12 @@
   .content-region3 {
     font-size: .9rem;
   }
+  
+  .content-region3-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
 }
 
 // desktops
